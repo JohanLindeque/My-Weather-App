@@ -25,6 +25,8 @@ async function getWeatherData(location) {
         //dispalay data on page
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "&deg;c";
+        document.querySelector(".temp-High").innerHTML = Math.round(data.main.temp_max) + "&deg;c  /";
+        document.querySelector(".temp-Low").innerHTML = Math.round(data.main.temp_min) + "&deg;c";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 

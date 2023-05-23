@@ -63,8 +63,22 @@ body{
 .weather h2{
     font-size: 45px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+.hi-Lo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.colTemp{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
 
 .details{
     display: flex;
@@ -95,6 +109,7 @@ body{
 .weather{
     display: none; /* hide dummy data */
 }
+
 
 .error{
     text-align: center;
